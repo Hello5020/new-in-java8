@@ -83,8 +83,6 @@ public class StreamAPITest2 {
         List<Employee> collect = EmployeeData.getEmployees().stream()
                 .filter(employee -> employee.getSalary() > 6000).collect(Collectors.toList());
         collect.forEach(System.out::println);
-
-
     }
 }
 
